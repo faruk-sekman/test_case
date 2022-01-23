@@ -61,12 +61,14 @@ export default {
     background-color: white;
     margin-bottom: 0;
     transition: all 0.1s ease;
+    border-radius: 0;
     &:hover, &.activeColor, &.activeSize {
-      border: 3px solid #6d6e6e;
+      outline: 3px solid #6d6e6e;
     }
     &[disabled] {
       border: 1px solid #ddd;
       cursor: not-allowed;
+      outline: none;
     }
   }
 }
